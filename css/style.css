@@ -1,8 +1,39 @@
-html {
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  transition: all 0.3s ease-in-out;
+  background-color: rgb(16, 150, 125);
+}
+
+.switch {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  cursor: pointer;
+  line-height: 1.5;
+  font-family: "Akaya Telivigala", cursive;
+}
+
+@media (max-width: 375px) {
+  .switch {
+    font-size: 1.25rem;
+  }
+}
+
+.hidden {
+  display: none;
 }
